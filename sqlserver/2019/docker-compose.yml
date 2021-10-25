@@ -2,6 +2,7 @@ version: "3.9"
 services:
   db:
     image: mcr.microsoft.com/mssql/server:2019-CU13-ubuntu-20.04
+    user: root
     ports:
       - "1433:1433"
     environment:
